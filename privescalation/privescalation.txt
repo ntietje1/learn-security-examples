@@ -1,0 +1,2 @@
+THe vulnerability lies in that the user who makes the request's role is not verified to be an admin, only the user who is BEING UPDATED. Therefore, anyone who knows the userid of a user could send a request that changes their role.
+This server endpoint should require authorization to be used. 

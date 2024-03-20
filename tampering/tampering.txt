@@ -1,0 +1,3 @@
+The vulnerability is in the registering of the user. There is no sanitation done on the user input, allowing potentially malicious inputs such as code that may be executed. 
+
+This violates the Integrity principle in CIA, as it allows unauthorized behavior in your application.

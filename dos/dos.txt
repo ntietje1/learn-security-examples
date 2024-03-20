@@ -1,2 +1,5 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+In the insecure version, the id field is not sanitized and therefore is vulnerable to injection attacks. Specifically, an attacker could put a query with a WHERE clause with an extremely long time to execute script within it.
+The id field should be sanitized and checked before being used in any kind of query to be executed.
